@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## This is the official repo for the Mac and Linux version of Revive Battlefield 2, 2142 and Heroes
 
 You can use the [editor on GitHub](https://github.com/GyKim91/Revive/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
