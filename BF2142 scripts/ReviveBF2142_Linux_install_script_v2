@@ -1,0 +1,84 @@
+#!/bin/bash
+# Updated : 1 August 2017
+# Wine version : 2.0.2
+# Tested on : Ubuntu 16.04, Lubuntu 16.04, Ubuntu GNOME 16.04, Linux Mint 18.1
+# v2
+# Author : Gyucika91
+# Support available on the Revive Network Discord server #support-mac-linux channel!
+[ "$PLAYONLINUX" = "" ] && exit 0
+source "$PLAYONLINUX/lib/sources"
+ 
+TITLE="Revive Battlefield 2142"
+PREFIX="REVIVE_BF2142"
+POL_System_SetArch "x86"
+
+POL_SetupWindow_Init
+
+# Welcome
+POL_SetupWindow_presentation "$TITLE" "Gyucika91" "Unofficial" "Battlelog.co" "$PREFIX"
+
+#Download game from torrent
+POL_SetupWindow_question "Do you need to download the game install files?\n\nIf yes, then a torrent file will be downloaded to your home folder which you must start manually.\n\nYou may find download links on the forums as well but those can be flagged and taken down any time." "Download Revive Battlefield 2142 game files?"
+if [ "$APP_ANSWER" = "TRUE" ]; then
+	POL_SetupWindow_wait "The torrent file is downloading to your home folder." "Please wait"
+	cd "$HOME"
+	curl -O "https://s3.amazonaws.com/static-revi-io/Revive_BF2142-Total_Installer-v0.8.6.torrent"
+	POL_SetupWindow_message "The torrent has been downloaded to your home folder.\nOpen it using the torrent client of your choice and wait for the download to complete before continuing!" "Download Revive Battlefield 2142"
+fi
+
+# Account creation
+POL_SetupWindow_question "Do you have an existing Battlelog.co account?\n\nYou need one to play online!\n\nClicking on 'No' will take you to the website to register for an account.\n\nYou may need to close the browser after you have registered in order to continue installation." "Revive Battlefield 2142 Account"
+if [ "$APP_ANSWER" = "FALSE" ]; then
+	POL_Browser 'https://bl2142.co/register.php'
+fi
+
+# Create prefix
+POL_Wine_SelectPrefix "$PREFIX"
+POL_Wine_PrefixCreate "2.0.2"
+
+# Use existing setup file
+POL_SetupWindow_browse "Find the BF2142_Setup.exe where you downloaded the game install files." "Install Revive Battlefield 2142"
+POL_SetupWindow_wait "Setup is launching..." "Please wait"
+POL_Wine start /unix "$APP_ANSWER"
+POL_SetupWindow_message "The setup is installing the game.\n\nInstall to the default location but do NOT create shortcuts.\nYou must install DirectX9!\n\nOnly click 'Next' here when the installation has finished!" "Revive Battlefield 2142 is installing"
+
+# Install DirectX 9 - NOT NEEDED
+#POL_Call POL_Install_d3dx9_43
+
+# Set CD-key
+POL_SetupWindow_textbox "Copy your Revive CD-key here from the website Account Settings.\n" "Update the CD-key"
+	POL_Wine reg ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\EA Games\Battlefield 2142\ergc" "/v" "" "/t" "REG_SZ" "/d" "x9392$APP_ANSWER" "/f"
+
+# Update BF2142.exe
+POL_SetupWindow_wait "The game client is being updated to the latest available version." "Updating game client"
+	POL_System_TmpCreate "$PREFIX"
+	cd "$POL_System_TmpDir"
+	curl -O "http://download.bf2.us/binary-release/BF2142-prod.exe"
+	rm -f "$HOME/.PlayOnLinux/wineprefix/$PREFIX/drive_c/Program Files/Electronic Arts/Battlefield 2142/BF2142.exe"
+	mv "$POL_System_TmpDir/BF2142-prod.exe" "$HOME/.PlayOnLinux/wineprefix/$PREFIX/drive_c/Program Files/Electronic Arts/Battlefield 2142/BF2142.exe"
+
+# Retrieve current screen resolution of primary/internal monitor for multiple monitor setups
+DIMENSIONX=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1 | sed -n '1p')
+DIMENSIONY=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2 | sed -n '1p')
+
+# Set winecfg
+POL_SetupWindow_wait "The configuration is being updated and adjusted to your current screen resolution." "Updating configuration"
+Set_Desktop "On" "$DIMENSIONX" "$DIMENSIONY"
+POL_Wine_X11Drv "Decorated" "N"
+POL_Wine_X11Drv "Managed" "N"
+POL_Wine_Direct3D "VideoMemorySize" "512"
+
+# Create shortcut, reason for the word Revive after and not before BF2142 is to increase the chance that the find command finds the correct shortcut name!
+POL_Shortcut "BF2142.exe" "Battlefield 2142 Revive" "" "+widescreen 1 +restart 0 +szx $DIMENSIONX +szy $DIMENSIONY"
+
+# Disable winedebug
+echo "WINEDEBUG=-all" >> "$HOME/.PlayOnLinux/wineprefix/$PREFIX/playonlinux.cfg"
+
+# Delete temp
+POL_System_TmpDelete
+
+# Outro
+POL_SetupWindow_message "You are now ready to play!\nFind the shortcut on your desktop or in the PlayOnLinux window.\nLog in using your Battlelog.co username and password.\nSee you on the battlefield!\n\nKNOWN BUGS: Under unity desktop on Ubuntu the game may fail to stay full-screen. A workaround is to disable the Virtual Desktop option in winecfg!\nThe game may crash when loading a new map or trying to open Options while playing on a server!\n\nJoin the Revive Network Discord server #support-mac-linux channel for help!" "Installation complete!"
+
+POL_SetupWindow_Close
+exit

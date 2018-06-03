@@ -1,0 +1,21 @@
+Made by Gyucika91. V2 31/07/17
+
+1. Pull Revive Battlefield 2142 to Applications
+
+2. Right-click on Revive Battlefield 2142 and choose "Show Package Contents"
+
+3. Run “Change_CDkey”, go to bl2142.co and log in. Go to Account Settings and copy your CD-key. Go back to the terminal press Enter to continue and paste in the CD-key. Press Enter. Close window
+
+4. Run “Change_Resolution”, press Enter to continue and type in your max screen resolution for fullscreen (RECOMMENDED), or lower number for windowed mode (MAY NOT WORK)
+
+5. Go back to Applications and you can now double-click to run the game. Use "Retrieve Account" to log in with your Revive account.
+
+IMPORTANT: If you already had Battlefield 2142 installed previously, then you MUST go to your “Documents” folder and delete the “Battlefield 2142” folder otherwise the game will crash on launch!
+
+MULTI-MONITOR SETUP: In the package contents you will find an app called “DisableMonitor” from https://github.com/Eun/DisableMonitor. If you want to play on an external monitor, you must first disable the laptop internal monitor and then run the game. This only needs to be done the first time you launch the game. After that the game will always launch on that monitor.
+
+INSTALL MODS: To install mods, you need to copy them to the “mods” folder. Right-click on Revive Battlefield 2142 and choose "Show Package Contents”. Double-click on “drive_c” and navigate to Program Files/Electronic Arts/Battlefield 2142/mods. Copy-paste your mod here.
+ 
+### CHANGELOG from v1
+* Made install graphics and packaged game as dmg
+* Updated instructions
