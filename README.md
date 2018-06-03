@@ -1,6 +1,7 @@
 ## This is the official repo for the Mac and Linux version of Revive Battlefield 2, 2142 and Heroes. Discontinued after the shutdown of the Revive Network.
 
 Revive Network has been shut down. More information here: [Revive Network](https://www.battlelog.co/)
+
 You can use the [editor on GitHub](https://github.com/GyKim91/Revive/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
