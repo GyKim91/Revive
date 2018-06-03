@@ -1,0 +1,32 @@
+#!/bin/bash
+# Game client updater for mac Revive BF2 v1 09/07/17
+# Gyucika91
+
+clear
+
+# Introduction text
+echo "Revive Battlefield 2 Game Client Updater v1 09/07/17"
+echo -e "This script will update the game client to the latest available version.\nThe old client will be renamed to BF2_BACKUP.exe.\n"
+
+read -rsp $'Press enter to continue...\n'
+
+cd "/Applications/Revive Battlefield 2.app"
+
+# Variables
+DESTINATION="$PWD/Contents/Resources/drive_c/Program Files/EA GAMES/Battlefield 2/BF2.exe"
+SOURCE="$PWD/BF2-prod.exe"
+BACKUP="$PWD/Contents/Resources/drive_c/Program Files/EA GAMES/Battlefield 2/BF2_BACKUP.exe"
+
+# Download newest client
+	curl -O http://download.bf2.us/binary-release/BF2-prod.exe
+
+# Back up old game client
+echo "Backing up old game client..."
+	mv -f "$DESTINATION" "$BACKUP"
+
+# Move new client into game folder
+echo "Moving new game client to game folder..."
+	mv "$SOURCE" "$DESTINATION"
+
+echo "Done"
+exit

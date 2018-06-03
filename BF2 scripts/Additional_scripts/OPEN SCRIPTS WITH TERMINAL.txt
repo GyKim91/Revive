@@ -1,0 +1,1 @@
+Right-click on the scripts and select “Open with -» Other…”. Find and select “Terminal”. You can only select Terminal if you change from “Recommended Applications” to “All Applications”!!!.

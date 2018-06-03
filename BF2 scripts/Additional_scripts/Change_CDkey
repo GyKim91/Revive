@@ -1,0 +1,30 @@
+#!/bin/bash
+# CD-key changer for mac Revive BF2 v1 09/07/17
+# Gyucika91
+
+clear
+
+# Introduction text
+echo "Revive Battlefield 2 CD-key Changer v1 09/07/17"
+echo "This script will update the CD-key for your existing Revive BF2 installation.
+"
+
+cd "/Applications/Revive Battlefield 2.app"
+
+# Read current CD-key, empty if does not exist
+CURRENTCDKEY=$(grep "x9392" "$PWD/Contents/Resources/system.reg" | sed -n '1p' | sed "s/\"//g" | cut -d 'x' -f2 | cut -c5-)
+
+echo -e "\nYour current CD-key is: $CURRENTCDKEY\n"
+
+read -rsp $'Press enter to continue...\n\n'
+
+echo -e "Copy your Revive CD-key by logging in to https://battlelog.co/ (hold down ctrl to click on the link) and going to the Account Settings page.
+Paste here by right-click paste.\nMake sure there are no spaces before or after the key!\n"
+
+read -e -p "New desired CD-key: " CDKEY 
+
+# Replace old CD-key with new one
+sed -i "" "s/.*x9392.*/@=\"x9392$CDKEY\"/" "$PWD/Contents/Resources/system.reg"
+
+echo "Done"
+exit

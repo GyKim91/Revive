@@ -1,0 +1,37 @@
+#!/bin/bash
+# Resolution changer for mac Revive BF2 v1 19/07/17
+# Gyucika91
+
+clear
+
+# Introduction text
+echo "Revive Battlefield 2 Resolution Changer v1 19/07/17"
+echo -e "This script will allow you to change the game and virtual desktop resolution.\n"
+
+read -rsp $'Press enter to continue...\n'
+
+cd "/Applications/Revive Battlefield 2.app"
+
+# Detect current resolution on main display
+DIMENSIONX=$(system_profiler SPDisplaysDataType | grep Resolution | cut -d ' ' -f12 | sed -n '1p')
+DIMENSIONY=$(system_profiler SPDisplaysDataType | grep Resolution | cut -d ' ' -f14 | sed -n '1p')
+
+# Show current detected desktop resolution
+echo -e "Your current desktop resolution is detected as: " $DIMENSIONX'x'$DIMENSIONY
+
+# Ask for new resolution
+read -ep "
+Type in your new resolution as eg. 1920x1080, 1400x900...
+
+Your desired new game resolution: " DESIRED
+
+#Break down input into X and Y axis, this is needed to modify the wrapper shortcut
+DESIREDX=$(echo $DESIRED | cut -d 'x' -f1)
+DESIREDY=$(echo $DESIRED | cut -d 'x' -f2)
+
+# Modify wrapper launch command
+sed -i "" "s|.*+widescreen 1.*|	<string>+widescreen 1 +restart 0 +szx $DESIREDX +szy $DESIREDY</string>|" "$PWD/Contents/Info.plist"
+
+# Confirm
+echo -e "\nYour new resolution is set at "$DESIREDX'x'$DESIREDY
+exit
