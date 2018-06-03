@@ -1,0 +1,12 @@
+#!/bin/bash
+
+clear
+
+LIST=$(curl https://reviveheroes.cdn.revive.systems/reviveheroes/depot/index | cut -d ' ' --complement -f 2-3 | sed -e 's/^/https:\/\/reviveheroes.cdn.revive.systems\/reviveheroes\/depot\/dist\//' | sed -e 's/\\/\//g')
+echo -e "$LIST" > downloadlist
+wget -m -i downloadlist
+rm -f downloadlist
+mv -f "$PWD/reviveheroes.cdn.revive.systems/reviveheroes/depot/dist" "$PWD/BFH"
+
+
+

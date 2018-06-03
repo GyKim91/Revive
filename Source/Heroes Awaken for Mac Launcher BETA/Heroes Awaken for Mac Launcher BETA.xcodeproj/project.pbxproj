@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9307BDB41F3E089800708A39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9307BDB31F3E089800708A39 /* AppDelegate.m */; };
+		9307BDBC1F3E089800708A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDBB1F3E089800708A39 /* Assets.xcassets */; };
+		9307BDBF1F3E089800708A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDBD1F3E089800708A39 /* Main.storyboard */; };
+		9307BDE91F3E1DDA00708A39 /* HA_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDE71F3E1DDA00708A39 /* HA_launcher.png */; };
+		9307BDEA1F3E1DDA00708A39 /* playNow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDE81F3E1DDA00708A39 /* playNow.png */; };
+		9307BDF21F3E1F0200708A39 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDEB1F3E1F0200708A39 /* banner.png */; };
+		9307BDF31F3E1F0200708A39 /* boxInput.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDEC1F3E1F0200708A39 /* boxInput.png */; };
+		9307BDF41F3E1F0200708A39 /* boxInputSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDED1F3E1F0200708A39 /* boxInputSelected.png */; };
+		9307BDF61F3E1F0200708A39 /* buttonEnter.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDEF1F3E1F0200708A39 /* buttonEnter.png */; };
+		9307BDF71F3E1F0200708A39 /* checkBox_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDF01F3E1F0200708A39 /* checkBox_0.png */; };
+		9307BDF81F3E1F0200708A39 /* checkBox_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDF11F3E1F0200708A39 /* checkBox_1.png */; };
+		9307BDFA1F3E2E3E00708A39 /* 03_bgFrame_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 9307BDF91F3E2E3E00708A39 /* 03_bgFrame_gray.png */; };
+		9321FA701F3F21500073C2A5 /* button_logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 9321FA6D1F3F21500073C2A5 /* button_logout.png */; };
+		9321FA711F3F21500073C2A5 /* button_register.png in Resources */ = {isa = PBXBuildFile; fileRef = 9321FA6E1F3F21500073C2A5 /* button_register.png */; };
+		9321FA721F3F21500073C2A5 /* button_reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 9321FA6F1F3F21500073C2A5 /* button_reset.png */; };
+		9321FA741F3F3AB80073C2A5 /* WEST_Custom_Item_5034.tga in Resources */ = {isa = PBXBuildFile; fileRef = 9321FA731F3F3AB80073C2A5 /* WEST_Custom_Item_5034.tga */; };
+		933601C31F40C16C00A176EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 933601C21F40C16C00A176EB /* main.m */; };
+		937F813B1F4051AA00CF349A /* logo_new_small.icns in Resources */ = {isa = PBXBuildFile; fileRef = 937F813A1F4051AA00CF349A /* logo_new_small.icns */; };
+		93DBBB941F4071D000C909C3 /* wrong_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 93DBBB931F4071D000C909C3 /* wrong_login.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9307BDC61F3E089800708A39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9307BDA71F3E089800708A39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9307BDAE1F3E089800708A39;
+			remoteInfo = "Heroes Awaken for Mac Launcher BETA";
+		};
+		9307BDD11F3E089800708A39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9307BDA71F3E089800708A39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9307BDAE1F3E089800708A39;
+			remoteInfo = "Heroes Awaken for Mac Launcher BETA";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9307BDAF1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heroes Awaken for Mac Launcher BETA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9307BDB21F3E089800708A39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9307BDB31F3E089800708A39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9307BDBB1F3E089800708A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9307BDC01F3E089800708A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9307BDC51F3E089800708A39 /* Heroes Awaken for Mac Launcher BETATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heroes Awaken for Mac Launcher BETATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9307BDD01F3E089800708A39 /* Heroes Awaken for Mac Launcher BETAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heroes Awaken for Mac Launcher BETAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9307BDE71F3E1DDA00708A39 /* HA_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HA_launcher.png; sourceTree = "<group>"; };
+		9307BDE81F3E1DDA00708A39 /* playNow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playNow.png; sourceTree = "<group>"; };
+		9307BDEB1F3E1F0200708A39 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		9307BDEC1F3E1F0200708A39 /* boxInput.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boxInput.png; sourceTree = "<group>"; };
+		9307BDED1F3E1F0200708A39 /* boxInputSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boxInputSelected.png; sourceTree = "<group>"; };
+		9307BDEF1F3E1F0200708A39 /* buttonEnter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonEnter.png; sourceTree = "<group>"; };
+		9307BDF01F3E1F0200708A39 /* checkBox_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBox_0.png; sourceTree = "<group>"; };
+		9307BDF11F3E1F0200708A39 /* checkBox_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBox_1.png; sourceTree = "<group>"; };
+		9307BDF91F3E2E3E00708A39 /* 03_bgFrame_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03_bgFrame_gray.png; sourceTree = "<group>"; };
+		9321FA6D1F3F21500073C2A5 /* button_logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_logout.png; sourceTree = "<group>"; };
+		9321FA6E1F3F21500073C2A5 /* button_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_register.png; sourceTree = "<group>"; };
+		9321FA6F1F3F21500073C2A5 /* button_reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_reset.png; sourceTree = "<group>"; };
+		9321FA731F3F3AB80073C2A5 /* WEST_Custom_Item_5034.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = WEST_Custom_Item_5034.tga; sourceTree = "<group>"; };
+		933601C21F40C16C00A176EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93433BC41F4B6B37007A01DD /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		937F813A1F4051AA00CF349A /* logo_new_small.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = logo_new_small.icns; sourceTree = "<group>"; };
+		937F813C1F40524300CF349A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93DBBB931F4071D000C909C3 /* wrong_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong_login.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9307BDAC1F3E089800708A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9307BDC21F3E089800708A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9307BDCD1F3E089800708A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9307BDA61F3E089800708A39 = {
+			isa = PBXGroup;
+			children = (
+				9307BDB11F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA */,
+				9307BDB01F3E089800708A39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9307BDB01F3E089800708A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9307BDAF1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA.app */,
+				9307BDC51F3E089800708A39 /* Heroes Awaken for Mac Launcher BETATests.xctest */,
+				9307BDD01F3E089800708A39 /* Heroes Awaken for Mac Launcher BETAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9307BDB11F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA */ = {
+			isa = PBXGroup;
+			children = (
+				9307BDE21F3E090B00708A39 /* Resources */,
+				9307BDB21F3E089800708A39 /* AppDelegate.h */,
+				9307BDB31F3E089800708A39 /* AppDelegate.m */,
+				93433BC41F4B6B37007A01DD /* main.h */,
+				933601C21F40C16C00A176EB /* main.m */,
+				9307BDBB1F3E089800708A39 /* Assets.xcassets */,
+				9307BDBD1F3E089800708A39 /* Main.storyboard */,
+				9307BDC01F3E089800708A39 /* Info.plist */,
+			);
+			path = "Heroes Awaken for Mac Launcher BETA";
+			sourceTree = "<group>";
+		};
+		9307BDE21F3E090B00708A39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93DBBB931F4071D000C909C3 /* wrong_login.png */,
+				937F813A1F4051AA00CF349A /* logo_new_small.icns */,
+				9321FA731F3F3AB80073C2A5 /* WEST_Custom_Item_5034.tga */,
+				9321FA6D1F3F21500073C2A5 /* button_logout.png */,
+				9321FA6E1F3F21500073C2A5 /* button_register.png */,
+				9321FA6F1F3F21500073C2A5 /* button_reset.png */,
+				9307BDF91F3E2E3E00708A39 /* 03_bgFrame_gray.png */,
+				9307BDEB1F3E1F0200708A39 /* banner.png */,
+				9307BDEC1F3E1F0200708A39 /* boxInput.png */,
+				9307BDED1F3E1F0200708A39 /* boxInputSelected.png */,
+				9307BDEF1F3E1F0200708A39 /* buttonEnter.png */,
+				9307BDF01F3E1F0200708A39 /* checkBox_0.png */,
+				9307BDF11F3E1F0200708A39 /* checkBox_1.png */,
+				9307BDE71F3E1DDA00708A39 /* HA_launcher.png */,
+				9307BDE81F3E1DDA00708A39 /* playNow.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9307BDAE1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9307BDD91F3E089800708A39 /* Build configuration list for PBXNativeTarget "Heroes Awaken for Mac Launcher BETA" */;
+			buildPhases = (
+				9307BDAB1F3E089800708A39 /* Sources */,
+				9307BDAC1F3E089800708A39 /* Frameworks */,
+				9307BDAD1F3E089800708A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heroes Awaken for Mac Launcher BETA";
+			productName = "Heroes Awaken for Mac Launcher BETA";
+			productReference = 9307BDAF1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9307BDC41F3E089800708A39 /* Heroes Awaken for Mac Launcher BETATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9307BDDC1F3E089800708A39 /* Build configuration list for PBXNativeTarget "Heroes Awaken for Mac Launcher BETATests" */;
+			buildPhases = (
+				9307BDC11F3E089800708A39 /* Sources */,
+				9307BDC21F3E089800708A39 /* Frameworks */,
+				9307BDC31F3E089800708A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9307BDC71F3E089800708A39 /* PBXTargetDependency */,
+			);
+			name = "Heroes Awaken for Mac Launcher BETATests";
+			productName = "Heroes Awaken for Mac Launcher BETATests";
+			productReference = 9307BDC51F3E089800708A39 /* Heroes Awaken for Mac Launcher BETATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9307BDCF1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9307BDDF1F3E089800708A39 /* Build configuration list for PBXNativeTarget "Heroes Awaken for Mac Launcher BETAUITests" */;
+			buildPhases = (
+				9307BDCC1F3E089800708A39 /* Sources */,
+				9307BDCD1F3E089800708A39 /* Frameworks */,
+				9307BDCE1F3E089800708A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9307BDD21F3E089800708A39 /* PBXTargetDependency */,
+			);
+			name = "Heroes Awaken for Mac Launcher BETAUITests";
+			productName = "Heroes Awaken for Mac Launcher BETAUITests";
+			productReference = 9307BDD01F3E089800708A39 /* Heroes Awaken for Mac Launcher BETAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9307BDA71F3E089800708A39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Gy K";
+				TargetAttributes = {
+					9307BDAE1F3E089800708A39 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					9307BDC41F3E089800708A39 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9307BDAE1F3E089800708A39;
+					};
+					9307BDCF1F3E089800708A39 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9307BDAE1F3E089800708A39;
+					};
+				};
+			};
+			buildConfigurationList = 9307BDAA1F3E089800708A39 /* Build configuration list for PBXProject "Heroes Awaken for Mac Launcher BETA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9307BDA61F3E089800708A39;
+			productRefGroup = 9307BDB01F3E089800708A39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9307BDAE1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA */,
+				9307BDC41F3E089800708A39 /* Heroes Awaken for Mac Launcher BETATests */,
+				9307BDCF1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9307BDAD1F3E089800708A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937F813B1F4051AA00CF349A /* logo_new_small.icns in Resources */,
+				9321FA711F3F21500073C2A5 /* button_register.png in Resources */,
+				9321FA721F3F21500073C2A5 /* button_reset.png in Resources */,
+				9307BDF41F3E1F0200708A39 /* boxInputSelected.png in Resources */,
+				9307BDFA1F3E2E3E00708A39 /* 03_bgFrame_gray.png in Resources */,
+				9307BDF31F3E1F0200708A39 /* boxInput.png in Resources */,
+				9321FA701F3F21500073C2A5 /* button_logout.png in Resources */,
+				93DBBB941F4071D000C909C3 /* wrong_login.png in Resources */,
+				9307BDF81F3E1F0200708A39 /* checkBox_1.png in Resources */,
+				9321FA741F3F3AB80073C2A5 /* WEST_Custom_Item_5034.tga in Resources */,
+				9307BDEA1F3E1DDA00708A39 /* playNow.png in Resources */,
+				9307BDBC1F3E089800708A39 /* Assets.xcassets in Resources */,
+				9307BDF61F3E1F0200708A39 /* buttonEnter.png in Resources */,
+				9307BDE91F3E1DDA00708A39 /* HA_launcher.png in Resources */,
+				9307BDBF1F3E089800708A39 /* Main.storyboard in Resources */,
+				9307BDF21F3E1F0200708A39 /* banner.png in Resources */,
+				9307BDF71F3E1F0200708A39 /* checkBox_0.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9307BDC31F3E089800708A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9307BDCE1F3E089800708A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9307BDAB1F3E089800708A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933601C31F40C16C00A176EB /* main.m in Sources */,
+				9307BDB41F3E089800708A39 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9307BDC11F3E089800708A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9307BDCC1F3E089800708A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9307BDC71F3E089800708A39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9307BDAE1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA */;
+			targetProxy = 9307BDC61F3E089800708A39 /* PBXContainerItemProxy */;
+		};
+		9307BDD21F3E089800708A39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9307BDAE1F3E089800708A39 /* Heroes Awaken for Mac Launcher BETA */;
+			targetProxy = 9307BDD11F3E089800708A39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9307BDBD1F3E089800708A39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				937F813C1F40524300CF349A /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9307BDD71F3E089800708A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9307BDD81F3E089800708A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9307BDDA1F3E089800708A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Heroes Awaken for Mac Launcher BETA/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "ReviveNetwork.Heroes-Awaken-for-Mac-Launcher-BETA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		9307BDDB1F3E089800708A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Heroes Awaken for Mac Launcher BETA/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "ReviveNetwork.Heroes-Awaken-for-Mac-Launcher-BETA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		9307BDDD1F3E089800708A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Heroes Awaken for Mac Launcher BETATests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReviveNetwork.Heroes-Awaken-for-Mac-Launcher-BETATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heroes Awaken for Mac Launcher BETA.app/Contents/MacOS/Heroes Awaken for Mac Launcher BETA";
+			};
+			name = Debug;
+		};
+		9307BDDE1F3E089800708A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Heroes Awaken for Mac Launcher BETATests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReviveNetwork.Heroes-Awaken-for-Mac-Launcher-BETATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heroes Awaken for Mac Launcher BETA.app/Contents/MacOS/Heroes Awaken for Mac Launcher BETA";
+			};
+			name = Release;
+		};
+		9307BDE01F3E089800708A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Heroes Awaken for Mac Launcher BETAUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReviveNetwork.Heroes-Awaken-for-Mac-Launcher-BETAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Heroes Awaken for Mac Launcher BETA";
+			};
+			name = Debug;
+		};
+		9307BDE11F3E089800708A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Heroes Awaken for Mac Launcher BETAUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReviveNetwork.Heroes-Awaken-for-Mac-Launcher-BETAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Heroes Awaken for Mac Launcher BETA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9307BDAA1F3E089800708A39 /* Build configuration list for PBXProject "Heroes Awaken for Mac Launcher BETA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9307BDD71F3E089800708A39 /* Debug */,
+				9307BDD81F3E089800708A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9307BDD91F3E089800708A39 /* Build configuration list for PBXNativeTarget "Heroes Awaken for Mac Launcher BETA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9307BDDA1F3E089800708A39 /* Debug */,
+				9307BDDB1F3E089800708A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9307BDDC1F3E089800708A39 /* Build configuration list for PBXNativeTarget "Heroes Awaken for Mac Launcher BETATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9307BDDD1F3E089800708A39 /* Debug */,
+				9307BDDE1F3E089800708A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9307BDDF1F3E089800708A39 /* Build configuration list for PBXNativeTarget "Heroes Awaken for Mac Launcher BETAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9307BDE01F3E089800708A39 /* Debug */,
+				9307BDE11F3E089800708A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9307BDA71F3E089800708A39 /* Project object */;
+}
